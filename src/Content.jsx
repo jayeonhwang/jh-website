@@ -1,7 +1,13 @@
+import { Projects } from "./Projects"
+import { About } from "./About"
+import { Contact } from "./Contact"
+
 export function Content() {
   return (
     <main>
-      <h1>Welcome to React!</h1>
+      < Projects />
+      < About />
+      < Contact />
     </main>
   )
 }
