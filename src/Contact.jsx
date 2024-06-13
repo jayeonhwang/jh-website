@@ -3,17 +3,12 @@ import emailjs from '@emailjs/browser';
 
 
 export function Contact() {
-
-  const API_KEY_SERVICE = import.meta.env.VITE_EMAILJS_SERVICE_ID
-  const API_KEY_TEMPLATE = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
-  const API_KEY_PUBLIC = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-
   const form = useRef()
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm(API_KEY_SERVICE, API_KEY_TEMPLATE, form.current, {
-        publicKey: API_KEY_PUBLIC,
+      .sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, form.current, {
+        publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       })
       .then(
         () => {
