@@ -2,18 +2,44 @@
   cursor: pointer;
 } */
 
+main,
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.icon {
+  width: 30px;
+  margin-right: 10px;
+}
+
+
 .thumnail {
-  width: 300px;
+  width: 50%;
   height: 250px;
   padding: 8px;
   object-fit: cover;
 
 }
 
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-container {
+  display: grid;
+}
+
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 350px;
+  width: 20 rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,4 +107,23 @@ a {
 .contact-section input,
 textarea {
   width: 80vw;
+}
+
+.message {
+  height: 15rem;
+}
+
+nav {
+  background-color: cadetblue;
+  width: 90vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+
 }

@@ -2,7 +2,7 @@ export function Header() {
   return (
     <header>
       <h1 className="name">Jayeon Hwang</h1>
-      <p>Software Developer</p>
+      <h3>Software Developer</h3>
       <p>HTML | CSS | Javascript | Ruby on Rails </p>
 
       <div className="icons">
@@ -18,7 +18,9 @@ export function Header() {
       </div>
 
       <nav>
-        <a href="#">Projects</a> | <a href="#">About</a> | <a href="#">Contact</a>
+        <a href="/">Projects</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
       </nav>
     </header>
   )

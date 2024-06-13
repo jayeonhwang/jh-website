@@ -1,12 +1,30 @@
 import { useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 
 export function Contact() {
+
+  const API_KEY_SERVICE = import.meta.env.VITE_EMAILJS_SERVICE_ID
+  const API_KEY_TEMPLATE = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+  const API_KEY_PUBLIC = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+
   const form = useRef()
-
-  const sendEmail = () => {
-
-  }
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(API_KEY_SERVICE, API_KEY_TEMPLATE, form.current, {
+        publicKey: API_KEY_PUBLIC,
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+    e.target.reset();
+  };
   return (
 
     <div className="contact-section">
