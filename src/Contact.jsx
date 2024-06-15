@@ -23,7 +23,7 @@ export function Contact() {
   return (
 
     <div className="contact-section">
-      <h2>contact</h2>
+      <h2>Contact me</h2>
       <form ref={form} onSubmit={sendEmail} className="contact-form">
 
         <p>Your email address</p>

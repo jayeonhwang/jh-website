@@ -3,11 +3,11 @@ export function Header() {
     <header>
       <h1 className="name">Jayeon Hwang</h1>
       <h3>Software Developer</h3>
-      <p>HTML | CSS | Javascript | Ruby on Rails </p>
+      <p> Javascript | HTML | CSS | Ruby on Rails </p>
 
       <div className="icons">
         <a href="https://www.linkedin.com/in/jay512" target='_blank' className="linkedin">
-          <img src="../logos/icon-linkedin.png" alt="inkedin" className="icon" />
+          <img src="../logos/icons-linkedin.png" alt="inkedin" className="icon" />
         </a>
         <a href="https://github.com/jayeonhwang" target='_blank' className="github">
           <img src="../logos/icons-github.png" alt="github" className="icon" />
