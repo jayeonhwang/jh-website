@@ -149,25 +149,29 @@ nav a:hover {
 
 .skills-list li {
   display: inline-block;
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 .links,
 .send-btn {
-  margin-top: 8px;
+  margin-top: 15px;
   width: 100%;
   display: flex;
-  justify-content: space-around;
 }
+
+.links {
+  justify-content: space-between
+}
+
 
 
 .links button,
 .message-btn {
   background-color: var(--color-black);
   color: var(--color-white);
-  margin-right: 8px;
   padding: 12px;
   cursor: pointer;
+  width: 150px;
 }
 
 /* about */
@@ -197,4 +201,8 @@ textarea {
 
 .message {
   height: 15rem;
+}
+
+.send-btn {
+  justify-content: center;
 }

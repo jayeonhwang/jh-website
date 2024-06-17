@@ -23,7 +23,7 @@ export function Projects() {
           </div>
 
           <div className="links">
-            <a href="https://fancy-tulumba-8b4202.netlify.app/" target="_blank">
+            <a href="https://fancy-tulumba-8b4202.netlify.app/" target="_blank" className="link-btn">
               <button>Demo</button>
             </a>
             <a href="https://github.com/jayeonhwang/flash-card-frontend" target="_blank">
@@ -45,15 +45,14 @@ export function Projects() {
             <ul className="skills-list">
               <li>Ruby on Rails</li>
               <li>React.js</li>
-              <li>HTML</li>
               <li>TailwindCSS</li>
             </ul>
           </div>
           <div className="links">
-            <a href="https://poetic-croissant-099c70.netlify.app/" target="_blank">
+            <a href="https://poetic-croissant-099c70.netlify.app/" target="_blank" className="link-btn">
               <button>Demo</button>
             </a>
-            <a href="https://github.com/jayeonhwang/clip-couture-frontend" target="_blank">
+            <a href="https://github.com/jayeonhwang/clip-couture-frontend" target="_blank" className="link-btn">
               <button>Repo</button>
             </a>
           </div>
