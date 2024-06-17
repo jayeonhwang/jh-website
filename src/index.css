@@ -157,6 +157,7 @@ nav li:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    gap: 20px;
     list-style: none;
     padding: 0;
   }
