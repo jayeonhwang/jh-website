@@ -1,9 +1,12 @@
+import { NavLink } from "react-router-dom"
 export function Header() {
   return (
     <header>
-      <h1 className="name">Jayeon Hwang</h1>
-      <h3>Software Developer</h3>
-      <p> Javascript | HTML | CSS | Ruby on Rails </p>
+      <div className="introduce">
+        <h1 className="name">Jayeon Hwang</h1>
+        <h3>Software Developer</h3>
+        <p> Javascript | HTML | CSS | Ruby on Rails </p>
+      </div>
 
       <div className="icons">
         <a href="https://www.linkedin.com/in/jay512" target='_blank' className="linkedin">
@@ -18,10 +21,37 @@ export function Header() {
       </div>
 
       <nav>
-        <a href="/">Projects</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
+        <ul>
+          <li>
+            <NavLink
+              to="/"
+              activeClassName="active"
+            >
+              Project
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/about"
+              activeClassName="active"
+            >
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/contact"
+              activeClassName="active"
+            >
+              Contact
+            </NavLink>
+          </li>
+        </ul>
       </nav>
+
+
+
     </header>
   )
-}  
+}
+
