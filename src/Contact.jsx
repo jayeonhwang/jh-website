@@ -1,9 +1,11 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 
 
 export function Contact() {
   const form = useRef()
+  const [isEmailSent, setIsEmailSent] = useState(false);
+
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -13,16 +15,22 @@ export function Contact() {
       .then(
         () => {
           console.log('SUCCESS!');
+          setIsEmailSent(true);
         },
         (error) => {
           console.log('FAILED...', error.text);
+          setIsEmailSent(false);
         },
       );
     e.target.reset();
   };
+
   return (
     <div className="contact-section">
       <h2>Contact me</h2>
+
+      {isEmailSent && <h1>Thank you for your message!</h1>}
+
       <form ref={form} onSubmit={sendEmail} className="contact-form">
 
         <p>Your email address</p>
