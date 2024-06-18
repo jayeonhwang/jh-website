@@ -1,5 +1,10 @@
-export function Projects() {
+import React from 'react';
+import FlashCardThumbnail from '../images/Flash-card-thumbnail.jpeg';
+import ShoppingMallThumbnail from '../images/Shopping-mall-thumbnail.jpeg';
+import SimpleCategoriesImage from '../images/simple-categories.png';
 
+
+export function Projects() {
 
   return (
     <div className="project">
@@ -7,7 +12,7 @@ export function Projects() {
 
       <div className="project-container">
         <div className="card">
-          <img src="../images/Flash-card-thumbnail.jpeg" alt="" className="thumnail" />
+          <img src={FlashCardThumbnail} alt="" className="thumnail" />
           <div className="description">
             <h4>Flash-card app</h4>
             <p>This is a web app for studying. user can put questions and answers on cards and flipped them, so users could memorize them and check achievement with a quiz.</p>
@@ -34,7 +39,7 @@ export function Projects() {
         </div>
 
         <div className="card">
-          <img src="../images/Shopping-mall-thumbnail.jpeg" alt="" className="thumnail" />
+          <img src={ShoppingMallThumbnail} alt="" className="thumnail" />
           <div className="description">
             <h4>Clip Couture</h4>
             <p>It&#39;s a virtual online shopping mall.
@@ -59,7 +64,7 @@ export function Projects() {
         </div>
 
         <div className="card">
-          <img src="../images/simple-categories.png" alt="" className="thumnail" />
+          <img src={SimpleCategoriesImage} alt="" className="thumnail" />
           <div className="description">
             <h4>Simple Javascript Categories</h4>
             <p>This is simple filter with vanila javascript, CSS and HTML</p>

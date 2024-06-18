@@ -1,4 +1,10 @@
+import React from 'react';
 import { NavLink } from "react-router-dom"
+import GithubIcon from '../logos/icons-github.png'
+import EmailIcon from '../logos/icons-email.png'
+import LinkedinIcon from '../logos/icons-linkedin.png'
+
+
 export function Header() {
   return (
     <header>
@@ -10,13 +16,13 @@ export function Header() {
 
       <div className="icons">
         <a href="https://www.linkedin.com/in/jay512" target='_blank' className="linkedin">
-          <img src="../logos/icons-linkedin.png" alt="inkedin" className="icon" />
+          <img src={LinkedinIcon} className="icon" />
         </a>
         <a href="https://github.com/jayeonhwang" target='_blank' className="github">
-          <img src="../logos/icons-github.png" alt="github" className="icon" />
+          <img src={GithubIcon} alt="github" className="icon" />
         </a>
         <a href="mailto:jayeon512@gmail.com" target='_blank' className="email">
-          <img src="../logos/icons-email.png" alt="email" className="icon" />
+          <img src={EmailIcon} alt="email" className="icon" />
         </a>
       </div>
 
