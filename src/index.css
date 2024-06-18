@@ -26,11 +26,11 @@ h3 {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 45px;
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 32px;
 }
 
 h3 {
@@ -43,6 +43,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url("../images/blue-background.jpg");
   background-color: var(--color-blue);
 }
 
@@ -168,13 +169,22 @@ nav li:hover {
 
   main {
     flex: 1;
-    margin-left: 350px;
+    margin-left: 300px;
     padding: 30px;
   }
 
   .contact-section {
     min-width: 500px;
-    padding-left: 2rem;
+    padding-left: 50px;
+  }
+
+  .about,
+  .contact-section {
+    margin-left: 50px;
+  }
+
+  .card {
+    max-width: 320px;
   }
 }
 
@@ -199,7 +209,7 @@ nav li:hover {
   border: solid 1px var(--color-black);
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
   transition: 0.3s;
-  width: 350px;
+  width: 85vw;
   margin: 10px;
   display: flex;
   flex-direction: column;

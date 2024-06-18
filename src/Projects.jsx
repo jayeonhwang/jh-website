@@ -3,7 +3,7 @@ export function Projects() {
 
   return (
     <div className="project">
-      <h1>Jayeon&#39;s Learning Log</h1>
+      <h2>Jayeon&#39;s Learning Log</h2>
 
       <div className="project-container">
         <div className="card">

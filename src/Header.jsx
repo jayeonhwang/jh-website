@@ -27,7 +27,7 @@ export function Header() {
               to="/"
               activeClassName="active"
             >
-              Project
+              Projects
             </NavLink>
           </li>
           <li>
