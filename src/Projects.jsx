@@ -2,7 +2,7 @@ import React from 'react';
 import FlashCardThumbnail from '../images/Flash-card-thumbnail.jpeg';
 import ShoppingMallThumbnail from '../images/Shopping-mall-thumbnail.jpeg';
 import SimpleCategoriesImage from '../images/simple-categories.png';
-import PortpolioWebsite from '../images/portpolio-website.png';
+import PortfolioWebsite from '../images/portfolio-website.png';
 
 
 export function Projects() {
@@ -89,7 +89,7 @@ export function Projects() {
         </div>
 
         <div className="card">
-          <img src={PortpolioWebsite} alt="" className="thumnail" />
+          <img src={PortfolioWebsite} alt="" className="thumnail" />
           <div className="description">
             <h4>Jayeon's website</h4>
             <p>Here is the site you are currently viewing. I created it to showcase my projects more clearly. I made an effort to build a responsive website.
