@@ -2,6 +2,7 @@ import React from 'react';
 import FlashCardThumbnail from '../images/Flash-card-thumbnail.jpeg';
 import ShoppingMallThumbnail from '../images/Shopping-mall-thumbnail.jpeg';
 import SimpleCategoriesImage from '../images/simple-categories.png';
+import PortpolioWebsite from '../images/portpolio-website.png';
 
 
 export function Projects() {
@@ -82,6 +83,31 @@ export function Projects() {
               <button>Demo</button>
             </a>
             <a href="https://github.com/jayeonhwang/js-categories" target="_blank">
+              <button>Repo</button>
+            </a>
+          </div>
+        </div>
+
+        <div className="card">
+          <img src={PortpolioWebsite} alt="" className="thumnail" />
+          <div className="description">
+            <h4>Jayeon's website</h4>
+            <p>Here is the site you are currently viewing. I created it to showcase my projects more clearly. I made an effort to build a responsive website.
+            </p>
+          </div>
+
+          <div className="skills">
+            <ul className="skills-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>React.js</li>
+            </ul>
+          </div>
+          <div className="links">
+            <a href="https://main--jhwang.netlify.app/" target="_blank" className="link-btn">
+              <button>Demo</button>
+            </a>
+            <a href="https://github.com/jayeonhwang/jh-website" target="_blank" className="link-btn">
               <button>Repo</button>
             </a>
           </div>
